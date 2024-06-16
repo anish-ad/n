@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anish - portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #040428;
+            color:white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(0, 0, 0);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(45, 45, 56);
+            font-size: 1.03rem;
+        }
+        .left{
+            font-size: 1.4rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+        .firstSection > div{
+            width: 35%;
+        }
+        .leftsection{
+            font-size: 3rem;
+            margin: 70px 0;
+        }
+        .rightsection img{
+            width: 80%;
+        }
+        .blue{
+            color: rgb(210, 155, 255);
+        }
+        #element{
+            color: rgb(210, 155, 255);
+        }
+    </style>
+</head>
+<body>
+    <head>
+        <nav>
+            <div class="left">Anish's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Place</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+    <main>
+        <section class="firstSection">
+            <div class="leftsection">
+                Hi my name is <span class="blue">Anish</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="ang.i.png" alt="">
+            </div>
+        </section>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['Web Developer'],
+              typeSpeed: 50,
+            });
+          </script>
+</body>
+</html>
